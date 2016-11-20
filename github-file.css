@@ -1,0 +1,7 @@
+a.btn-sm.new-pull-request-btn {
+    font-size: 0;
+}
+
+a.btn-sm.new-pull-request-btn::after {
+    content: "新しいpullリクエスト";
+}

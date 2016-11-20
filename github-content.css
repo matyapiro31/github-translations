@@ -1,0 +1,85 @@
+.fork-flag,.shelf-cta,.reponav > a,.reponav > span span[itemprop="name"],a.btn-sm[href="/new"],.btn-sm[data-ga-click$="text:Star"],.btn-sm[data-ga-click$="text:Fork"] {
+    font-size: 0;
+}
+
+.fork-flag a {
+    font-size: 11px;
+}
+
+.fork-flag::after {
+    font-size: 11px;
+    content: "からフォークされました";
+}
+
+a.shelf-cta::after {
+    font-size: 16px;
+}
+
+a.shelf-cta[href="https://guides.github.com/activities/hello-world/"]::after {
+    content: "ガイドを読む";
+}
+
+a.shelf-cta[href="/new"]::after {
+    content: "プロジェクトを開始する";
+}
+
+.reponav > span span[itemprop="name"]::after {
+    font-size: 14px;
+}
+
+.reponav > span svg.octicon-code span[itemprop="name"]::after {
+    content: "コード";
+}
+
+.reponav > span svg.octicon-git-pull-request span[itemprop="name"]::after {
+    content: "Pullリクエスト";
+}
+
+.reponav > a::after {
+    font-size: 14px;
+    padding-left: 7px;
+}
+
+.reponav > a[href$="/projects"] span::before {
+    content: "プロジェクト";
+    display: initial;
+    color: #666;
+    white-space: nowrap;
+    border: solid transparent;
+    background: none;
+    font-size: 14px;
+}
+
+.reponav > a[href$="/pulse"]::after {
+    content: "動静" !important;
+}
+
+
+.reponav > a[href$="/graphs"]::after {
+    content: "グラフ";
+}
+
+.reponav > a[href$="/settings"]::after {
+    content: "設定";
+}
+
+.reponav > a[arial-label="All gists"]::after {
+    content: "個のギスト";
+}
+
+.reponav > a[href$="/forked"]::after {
+    content: "個のフォーク";
+}
+
+.btn-sm::after {
+    font-size: 12px;
+}
+
+.btn-sm[data-ga-click$="text:Star"]::after {
+    content: "星";
+}
+
+.btn-sm[data-ga-click$="text:Fork"]::after {
+    content: "フォーク";
+}
+

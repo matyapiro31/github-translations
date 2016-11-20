@@ -1,0 +1,96 @@
+.header-nav-link,.dropdown-item,.header-nav-current-user,.header-nav-item a.btn-sm {
+    font-size: 0;
+}
+
+.header-nav-link::after {
+    font-size: 13px;
+}
+
+.header-nav-link[href="/pulls"]::after {
+    content: "Pullリクエスト";
+}
+
+.header-nav-link[href="/issues"]::after {
+    content: "問題";
+}
+
+.header-nav-link[href="https://gist.github.com/"]::after {
+    content: "ギスト";
+}
+
+.dropdown-item::after {
+    font-size: 14px;
+}
+
+a.dropdown-item[href="/new"]::after {
+    content: "新しいリポジトリ";
+}
+
+a.dropdown-item[href="/new/import"]::after {
+    content: "リポジトリをインポート";
+}
+
+a.dropdown-item[href="https://gist.github.com/"]::after {
+    content: "ギストを作成";
+}
+
+a.dropdown-item[href="/organizations/new"]::after {
+    content: "新しい団体";
+}
+
+a.dropdown-item[href$="/settings/collaboration"]::after {
+    content: "新しい貢献者";
+}
+
+.header-nav-current-user strong {
+    font-size: 14px;
+}
+
+.header-nav-current-user::after {
+    font-size: 14px;
+    white-space: pre;
+    content: "がサインイン中";
+}
+
+.dropdown-item[data-ga-click$="text:your profile"]::after {
+    content: "自分のプロファイル";
+}
+
+.dropdown-item[data-ga-click$="text:your stars"]::after {
+    content: "自分の星";
+}
+
+.dropdown-item[data-ga-click$="text:explore"]::after {
+    content: "探索";
+}
+
+.dropdown-item[data-ga-click$="text:your gists"]::after {
+    content: "自分のギスト";
+}
+
+.dropdown-item[data-ga-click$="text:starred gists"]::after {
+    content: "星の付いたギスト";
+}
+
+.dropdown-item[data-ga-click$="text:integrations"]::after {
+    content: "他のサービスとの統合";
+}
+
+.dropdown-item[data-ga-click$="text:help"]::after {
+    content: "ヘルプ";
+}
+
+.dropdown-item[data-ga-click$="icon:settings"]::after {
+    content: "設定";
+}
+
+.dropdown-item[data-ga-click$="icon:logout"]::after {
+    content: "サインアウト";
+}
+
+.header-nav-item a.btn-sm[data-ga-click$="text:new gist"]::after {
+    font-size: 12px;
+    content: "新しいギスト";
+}
+
+
